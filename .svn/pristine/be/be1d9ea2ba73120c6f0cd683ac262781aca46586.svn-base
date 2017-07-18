@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="app_name">eCompliance</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="chooseautosync">ऑटो संयुक्त आवृत्ति का चयन</string>
+    <string name="restartapp">पुनः आरंभ करें</string>
+    <string name="restsrtmsg">परिवर्तन लागू किया जाएगा जब आप सॉफ्टवेयर को पुनः आरंभ</string>
+    <string name="synctxt">अंतिम संयुक्त:</string>
+    <string name="setfrequency">सेट ऑटो संयुक्त आवृत्ति</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="FingerPrint">अंगुली की छाप</string>
+    <string name="ScanFinger">उंगली स्कैन करें</string>
+    <string name="ClickScanFinger">उंगली स्कैन के लिए क्लिक करें</string>
+    <string name="NewVisitor">नया उपयोगकर्ता</string>
+    <string name="EditVisitor">रिकॉर्ड बदले</string>
+    <string name="ViewVisitors">रिकॉर्ड देखे</string>
+    <string name="Patient">रोगी</string>
+    <string name="PM">कार्यक्रम प्रबंधक</string>
+    <string name="Counselor">परामर्शदाता</string>
+    <string name="QA">गुणवत्ता परीक्षक</string>
+    <string name="CDP">समुदाय डॉट प्रदाता</string>
+    <string name="Others">अन्य</string>
+    <string name="EnterId">आईडी दर्ज करे </string>
+    <string name="AshaId">आशा  आईडी</string>
+    <string name="MarkVisit">निशान\nभेंट</string>
+    <string name="Edit">बदले </string>
+    <string name="Cancel">रद्द करें</string>
+    <string name="Backup">बैकअप</string>
+    <string name="Dashboard">डैशबोर्ड</string>
+    <string name="Diagnostics">निदान</string>
+    <string name="HavingTrouble">परेशानी हो रही</string>
+    <string name="SchedulePrompt">अनुसूची चुनें:</string>
+    <string name="StagePrompt">स्टेज चुनें:</string>
+    <string name="StatusPrompt">स्थिति चुनें:</string>
+    <string name="categoryPrompt">श्रेणी चुनें:</string>
+    <string name="centerPrompt">सेंटर चुनें:</string>
+    <string name="treatmentId">उपचार आईडी =</string>
+    <string name="enterUserInformation">उपयोगकर्ता जानकारी दर्ज करें और सहेजें बटन पर क्लिक करें</string>
+    <string name="name">नाम</string>
+    <string name="phoneNumber">फोन नंबर</string>
+    <string name="stage">स्टेज</string>
+    <string name="schedule">अनुसूची</string>
+    <string name="category">श्रेणी</string>
+    <string name="center">सेंटर</string>
+    <string name="save">सुरक्षित करे </string>
+    <string name="cancel">रद्द करें</string>
+    <string name="hintName">नाम दर्ज करें </string>
+    <string name="hintPhoneNumber">नंबर दर्ज करें</string>
+    <string name="EnterCenter">सेंटर दर्ज करें:.</string>
+    <string name="selectCategory">श्रेणी चुनें</string>
+    <string name="txtId">(आईडी=</string>
+    <string name="CloseID">)</string>
+    <string name="selectCenter">सेंटर चुनें</string>
+    <string name="isPatientNewForAshaProgram">क्या रोगी आशा कार्यक्रम से पहेली बार जुड़ रहा है?</string>
+    <string name="DoesPatientHaveID">क्या रोगी के पास उपचार कार्ड है? </string>
+    <string name="PatientTakenDoseForEightWeek">क्या रोगी पिछले 8 हफ्ते से दवाई खा रहा है?</string>
+    <string name="enterOldID">पुरानी आईडी डाले </string>
+    <string name="continu">जारी</string>
+    <string name="enterID">आशा आईडी डाले</string>
+    <string name="changeCategory">श्रेणी बदलें</string>
+    <string name="changeStage">स्टेज बदलें</string>
+    <string name="changeschedule">अनुसूची बदलें</string>
+    <string name="changeStatus">स्थिति बदलें</string>
+    <string name="changeCenter">सेंटर बदलें</string>
+    <string name="status">स्थिति</string>
+    <string name="done">समाप्त</string>
+    <string name="patientSaveDetail">रोगी के जानकारी बदल गयी है</string>
+    <string name="ReportAllPatient">सभी सक्रिय रोगी </string>
+    <string name="ReportAllVisitor">सभी उपयोगकर्ता</string>
+    <string name="ReportPendingToday">आज आने वाले रोगी </string>
+    <string name="ReportPatientVisitedToday">आज आ चुके रोगी </string>
+    <string name="ReportVisitorLogged">आज आ चुके  उपयोगकर्ता</string>
+    <string name="ReportMissedDose">अनुपस्थित रोगी </string>
+    <string name="lastVisit">अंतिम स्कैन</string>
+    <string name="Restore">पुनः स्थापित</string>
+    <string name="RestorePD">पुनः स्थापित हो रहा है .कृपया इंतज़ार करे..</string>
+    <string name="RestoreSuccessToast"> पुनः स्थापित सफलतापूर्वक हो गया है </string>
+    <string name="RestoreUnsuccessToast"> पुनः स्थापित विफल हो गया है </string>
+    <string name="RestoreDirectryNotFound">पुनः स्थापित विफल हो गया है! फ़ाइल नहीं मिली! निर्देशिका या फाइल मौजूद नहीं है?</string>
+    <string name="savedFile">सहेजी गई फ़ाइल: </string>
+    <string name="missed">अनुपस्थित</string>
+    <string name="pending">आज आने वाले </string>
+    <string name="visited">आज आ चुके </string>
+    <string name="menu_home_setting">सेटिंग</string>
+    <string name="emptyID">उपचार आईडी खाली नहीं हो सकता!</string>
+    <string name="enterCorrectId">सही आईडी दर्ज करें</string>
+    <string name="defaultCanNotEdit">डिफ़ॉल्ट रोगी संपादित नहीं हो सकता!</string>
+    <string name="SignOffAdmin">Sign Off Admin</string>
+    <string name="Reports">रिपोर्टें</string>
+    <string name="doYouWantToLogin">क्या आप लॉगिन करना चाहते हैं?</string>
+    <string name="adminLoginRequired">एडमिनिस्ट्रेशन लॉगिन आवश्यक!</string>
+    <string name="unsupervisedDose">अनिरीक्षित खुराक</string>
+    <string name="unsupervised_Dose">अनिरीक्षित खुराक  </string>
+    <string name="NumofDoses">खुराकों की संख्या</string>
+    <string name="Reason">कारण</string>
+    <string name="unsupervisedDosePrompt">अनिरीक्षित खुराक संख्या चुनें:</string>
+    <string name="unsupervisedDoseReasonPrompt">अनिरीक्षित खुराक का कारण चुनें</string>
+    <string name="unsupervisedDosesave">अनिरीक्षित खुराक सफलतापूर्वक दी.</string>
+    <string name="title_activity_unsupervised_Dose">अनिरीक्षित खुराक</string>
+    <string name="patientCannotBeGivenUnsupervisedDose">रोगी अनिरीक्षित खुराक नहीं दिया जा सकता है!</string>
+    <string name="PdSyncData">संयुक्त प्रक्रिया चल रहा है.कृपया प्रतीक्षा करें.</string>
+    <string name="enterAuthKey">पासवर्ड दर्ज करें</string>
+    <string name="sync">संयुक्त करें</string>
+    <string name="AuthError">प्रमाणीकरण त्रुटि!</string>
+    <string name="AuthErrorDesc">गलत पासवर्ड!फिर प्रयास करें!</string>
+    <string name="Retry">पुन: प्रयास करें</string>
+    <string name="pdAuthData">प्रमाणीकरण प्रगति में है. कृपया प्रतीक्षा करें.</string>
+    <string name="syncComplete">संयुक्त का कार्य पूरा हुआ.</string>
+    <string name="adminNotAuth">प्रमाणीकृत नहीं  है.</string>
+    <string name="counselorLoginRequired">काउंसलर लॉग इन आवश्यक!</string>
+    <string name="machineLocked">मशीन बंद है</string>
+    <string name="closebutton">बंद करें [x]</string>
+    <string name="sundayBlockMessage">यह कार्यक्षमता रविवार को काम नहीं करेगा</string>
+    <string name="patientsfromLegacy">पुराने सिस्टम के मरीज</string>
+    <string name="verifyId">उपचार आईडी पहचान करें!</string>
+    <string name="doYouWantToContinue">क्या आप जारी रखना चाहते हैं?</string>
+    <string name="id">आईडी  = </string>
+    <string name="cancellation">रद्द</string>
+    <string name="labResult">लैब रिजल्ट</string>
+    <string name="labResultPrompt">लैब रिजल्ट चुनें:</string>
+    <string name="selectLabResult">रिजल्ट का चयन करें:</string>
+    <string name="selectNewCenter">नई सेंटर का चयन करें</string>
+    <string name="clusterLockMessage">एक और मशीन संयुक्त हो रहा हैं.बाद में कोशिश करें! </string>
+    <string name="transferInternallyCanNotEdit">ट्रांस्फेर्रेड  इन्तेर्नाल्ली  रोगी संपादित नहीं हो सकता!</string>
+    <string name="notificationMachineInactive">मशीन सक्रिय नहीं है </string>
+    <string name="notificationMachineIdNotExist">मशीन आईडी मौजूद नहीं है</string>
+    <string name="enterCorrectName">सही नाम दर्ज करें</string>
+    <string name="enterCorrectPhone">सही फोन नंबर दर्ज करें</string>
+    <string name="enterName">नाम दर्ज करें</string>
+    <string name="enterPhoneNo">फोन नंबर दर्ज करें.</string>
+    <string name="updated">updated</string>
+    <string name="primaryFinger">प्राथमिक उंगली</string>
+    <string name="secondaryFinger">अतिरिक्त उंगली</string>
+    <string name="rightThumb">दाहिने हाथ का अंगूठा </string>
+    <string name="rightIndexFinger">दाहिने हाथ की पहली उँगली</string>
+    <string name="rightMiddleFinger">दाहिने हाथ की बीच की उँगली</string>
+    <string name="rightRingFinger">दाहिने हाथ की चौथी उँगली</string>
+    <string name="rightPinky">दाहिना हाथ की छोटी उंगली</string>
+    <string name="leftThumb">बाएं हाथ का अंगूठा</string>
+    <string name="leftIndexFinger">बाएं हाथ की पहली उँगली</string>
+    <string name="leftMiddleFinger">बाएं हाथ की बीच की उँगली</string>
+    <string name="leftRingFinger">बाएं हाथ की चौथी उँगली</string>
+    <string name="leftPinky">बाएं हाथ की छोटी उंगली</string>
+    <string name="canntOpenUSBDevice">यूएसबी डिवाइस नहीं खोल सकता</string>
+    <string name="cannotStartEnrollmentErrorDescription">मांकन अभियान शुरू नहीं कर सकते.</string>
+    <string name="registrationCanceled">उपयोगकर्ता द्वारा पंजीकरण रद्द.</string>
+    <string name="registered">पंजीकृत!</string>
+    <string name="userDenyScannerDevice">प्रयोक्ता स्कैनर डिवाइस से इनकार</string>
+    <string name="scanYourFinger">अपनी उंगली स्कैन करें.</string>
+    <string name="moreTime">बार और </string>
+    <string name="takeFingerOff">डिवाइस से उंगली हटाए </string>
+    <string name="enrollmentFinishedSuccessfully">नामांकन सफलतापूर्वक समाप्त हो गया.गुणवत्ता: </string>
+    <string name="scanAlreadyExists">नामांकन में विफल रहा है.स्कैन पहले से मौजूद है!</string>
+    <string name="putFingeronDevice">डिवाइस पर उंगली रखे</string>
+    <string name="fingerprintReaderError">फिंगरप्रिंट रीडर समस्या</string>
+    <string name="identificationErrorDatabaseIsEmpty">पहचान त्रुटि. त्रुटि विवरण: डाटाबेस खाली है</string>
+    <string name="alreadyVisitedToday">ने पहले से ही आज का दौरा कर लिया है .</string>
+    <string name="loggedIn">लॉग इन हो गया.</string>
+    <string name="hasAlreadyTakenDose">ने खुराक ले लिया है.</string>
+    <string name="isInactiveCurrentStatus">निष्क्रिय है.वर्तमान स्थिति: </string>
+    <string name="visitorInactive">स्कैन मिला लेकिन आगंतुक निष्क्रिय है.</string>
+    <string name="noDataHere">यहाँ कोई डाटा नहीं है</string>
+    <string name="errorIdEmpty">त्रुटि! उपचार आईडी खाली है!</string>
+    <string name="errorIdNotFound">त्रुटि! उपचार आईडी नहीं मिला!</string>
+    <string name="verificationCanceledByUser">उपयोगकर्ता द्वारा सत्यापन रद्द</string>
+    <string name="scanMismatchError">स्कैन असंतुलन त्रुटि!</string>
+    <string name="identificationCompleteNotFound">पहचान सम्पूर्ण हुआ:नहीं मिला!</string>
+    <string name="visitorOrPatientNotExist">आगंतुक/रोगी मौजूद नहीं है!</string>
+    <string name="canNotStartEnrollmentOperation">नामांकन प्रक्रिया प्रारंभ नहीं कर सकता</string>
+    <string name="errorDescription">त्रुटि विवरण:</string>
+    <string name="canNotOpenScannerDevice">स्कैनर डिवाइस नहीं खोल सकता.</string>
+    <string name="canNotStartVerificationOperation">सत्यापन ऑपरेशन शुरू नहीं कर सकते.</string>
+    <string name="canNotStartIdentificationOperation">पहचान ऑपरेशन शुरू नहीं कर सकते.</string>
+    <string name="initialCounsellingTimedOut">%1$s के प्रारंभिक परामर्श का समय समाप्त हो गया .फिर प्रारंभिक परामर्श शुरू करने के लिए फिर से स्कैन ले!</string>
+    <string name="initialCounsellingStarted">%1$s के प्रारंभिक परामर्श शुरू कर दिया.</string>
+    <string name="yes">हां</string>
+    <string name="no">नहीं</string>
+    <string name="provider">प्रोवाइडर मशीन</string>
+    <string name="centerMachine">सेंटर मशीन</string>
+    <string name="internetConnectionUnavailable">सिंक्रनाइज़ेशन में विफलता. इंटरनेट कनेक्शन उपलब्ध नहीं है.</string>
+    <string name="ok">ओके</string>
+    <string name="incorrectTreatmentId">गलत ट्रीटमेंट आईडी. फिर चयन करें!</string>
+    <string name="error">ग़लती!</string>
+    <string name="menu_resource">डाउनलोड संसाधन</string>
+    <string name="menu_Balance">शेष राशि की जांच</string>
+    <string name="age">उम्र</string>
+    <string name="gender">लिंग</string>
+    <string name="genderPrompt">लिंग का चयन</string>
+    <string name="hintAge">उम्र</string>
+    <string name="enterCorrectAge">सही उम्र दर्ज करे|</string>
+    <string name="selectGender">लिंग का चयन</string>
+    <string name="enterAge">उम्र दर्ज करे|</string>
+    <string name="networkError">नेटवर्क त्रुटि</string>
+    <string name="netwrokErrorDes">नेटवर्क उपलब्ध नहीं है. अपने नेटवर्क की जाँच करें!</string>
+    <string name="FBSResult">ग्लूकोमीटर टेस्ट रिजल्ट</string>
+    <string name="HBA1CResult">HbA1c रिजल्ट</string>
+    <string name="HBA1CResultCancelled">HbA1c रिजल्ट रद्द!</string>
+    <string name="FBSResultCancelled">ग्लूकोमीटर टेस्ट रिजल्ट रद्द!</string>
+    <string name="enterFBSResult">ग्लूकोमीटर टेस्ट दर्ज करे|</string>
+    <string name="enterCorrectFBSResult">सही ग्लूकोमीटर टेस्ट दर्ज करे|</string>
+    <string name="fbsResultComplete">ग्लूकोमीटर परीक्षण पूरा!</string>
+    <string name="enterHBaicResult">HbA1c रिजल्ट दर्ज करे|</string>
+    <string name="enterCorrectHBaicResult">सही HbA1c रिजल्ट दर्ज करे|</string>
+    <string name="HBA1CResultComplete">HbA1c नतीजे पूरे किए</string>
+    <string name="keyManagementError">कुंजी प्रबंधन त्रुटि| तकनीकी टीम को संपर्क करे|</string>
+    <string name="menu_pos_contacts">पॉजिटिव संपर्क</string>
+    <string name="setsyncfrequency">संयुक्त करें</string>
+    <string name="address">पता</string>
+    <string name="refPhone">रिफरेन्स फ़ोन नंबर</string>
+    <string name="inactivePatient">Inactive Patient</string>
+    <string name="questionsfinal">फाइनल करे</string>
+    <string name="next">अगला</string>
+    <string name="selfAdminText">All self Administration Dose Taken</string>
+    <string name="noOfSelfAdminDoses">No of self Administration Dose Taken</string>
+    <string name="enterCorrectSelfAdmin">Enter Correct Self Administration Doses</string>
+    <string name="ChildrenOldAges">बच्चे और वृद्धों</string>
+    <string name="enterIP">दर्ज आईपी ​​खुराक</string>
+    <string name="enterExtIP">दर्ज विस्तारित आईपी खुराक</string>
+    <string name="enterCP">दर्ज सीपी खुराक</string>
+    <string name="maxIPDoseCAT2">श्रेणी- II आईपी खुराक 36 से अधिक नहीं किया जा सकता</string>
+    <string name="maxExtIPDoseCAT2">श्रेणी- II विस्तारित आईपी खुराक 12 से अधिक नहीं किया जा सकता</string>
+    <string name="maxCPDoseCAT2">श्रेणी- II सीपी खुराक 22 से अधिक नहीं किया जा सकता</string>
+    <string name="maxIPDoseCAT1">श्रेणी- I आईपी खुराक 24 से अधिक नहीं किया जा सकता</string>
+    <string name="maxExtIPDoseCAT1">श्रेणी- I विस्तारित आईपी खुराक 12 से अधिक नहीं किया जा सकता</string>
+    <string name="maxCPDoseCAT1">श्रेणी- I सीपी खुराक 18 से अधिक नहीं किया जा सकता</string>
+    <string name="IPdose">Dose Taken in IP</string>
+    <string name="Ex_Ipdose">Dose Taken in Ex-IP</string>
+    <string name="CPdose">Dose Taken in CP</string>
+    <string name="patientRegistraton">Patient Registration</string>
+    <string name="pmRegistration">PM Registration</string>
+    <string name="pmLoginRequiredFull">Program Manager login required!</string>
+    <string name="updateScan">Update Scan/Old Patient</string>
+    <string name="pmLoginRequired">PM login required!</string>
+    <string name="sendDatatoServer">Send Data</string>
+    <string name="PdSendData">Sending data in Progress. Please wait..</string>
+    <string name="sendComplete">Send data Complete.</string>
+    <string name="IrisError">"Error",
+					"The program cannot run properly due to connection problem."
+							+ "We suggest to do the following actions:\n\t1. Unplug and plugin the device.\n\t2. Restart the application"</string>
+    <string name="visitorsfromLegacy">Visitors Re-registration</string>
+
+    <string-array name="farn_array">
+        <item>95</item>
+        <item>166</item>
+        <item>245</item>
+        <item>345</item>
+        <item>405</item>
+    </string-array>
+    <string-array name="maxframes_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="sdkversion_array">
+        <item>SDK 3.0</item>
+        <item>SDK 3.5</item>
+        <item>Both</item>
+    </string-array>
+    <string-array name="SelfAdmin">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string name="Back">वापस</string>
+    <string name="Comments">कमैंट्स</string>
+    <string name="header">Quality Audit Questions</string>
+    <string name="doYouWantToFinalTheAudit">Do You WantTo Finalize The Audit</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="finalize">Finalize</string>
+    <string name="qauaityAuditComplete">Qauaity Audit Completed</string>
+    <string name="saving">Saving...</string>
+    <string name="loding">Loding...</string>
+    <string name="qauaityAuditCompleteFirstStage">Login to Finalize the Audit...</string>
+    <string name="verifying">Verifying...</string>
+    <string name="select">Select</string>
+    <string name="qualityAuditCanceled">quality audit cancelled!</string>
+    <string name="errorTabId">टैब आईडी में त्रुटि। समर्थन टीम से संपर्क करें।</string>
+    <string name="errorCenterId">केंद्र आईडी में त्रुटि । समर्थन टीम से संपर्क करें।</string>
+
+    <string-array name="QualityQuestionArray">
+        <item>विकल्प का चयन करें</item>
+        <item>एवरेज</item>
+        <item>गुड</item>
+        <item>एक्सीलेंट</item>
+        <item>एडमिन अकाउंट</item>
+        <item>यूजर अकाउंट</item>
+        <item>आईडिया नेट सेटर</item>
+        <item>किसी भी अन्य dongle या डेटा कार्ड</item>
+    </string-array>
+
+</resources>

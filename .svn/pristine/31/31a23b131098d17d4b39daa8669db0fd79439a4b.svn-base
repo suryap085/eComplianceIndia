@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selectStatusLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/grey_to_red_transition"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/errorMassage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerStatusEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dip"
+                    android:popupBackground="@color/ContactEditBackground"
+                    android:prompt="@string/SchedulePrompt"
+                    android:scrollbarStyle="insideOverlay"
+                    android:textColor="#372c24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/newCenterSelectLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selectNewCenter"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerNewCenter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dip"
+                    android:popupBackground="@color/ContactEditBackground"
+                    android:prompt="@string/centerPrompt"
+                    android:scrollbarStyle="insideOverlay"
+                    android:textColor="#372c24" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_background"
+                android:onClick="onDoneClick"
+                android:text="@string/done"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnPatientCancelAdd"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_background"
+                android:onClick="onCancelClick"
+                android:text="@string/cancel"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

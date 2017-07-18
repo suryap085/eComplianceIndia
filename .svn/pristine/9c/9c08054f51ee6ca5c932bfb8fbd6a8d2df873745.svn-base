@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/newPatientLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_to_red_transition"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/errorACA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dip"
+            android:textColor="@color/Red"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dip"
+            android:text="@string/selfAdminText"
+            android:textColor="@color/Black"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/selfAdminSpn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dip"
+            android:entries="@array/SelfAdmin" />
+
+        <LinearLayout
+            android:id="@+id/noofSelfAdminDoseLay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/noOfSelfAdminDoses"
+                android:textColor="@color/Black" />
+
+            <EditText
+                android:id="@+id/noOfDoses"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:filterTouchesWhenObscured="true"
+                android:inputType="number"
+                android:maxLength="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="170dip"
+                android:layout_height="80dip"
+                android:layout_marginLeft="70dip"
+                android:background="@drawable/button_background"
+                android:onClick="onDoneClick"
+                android:text="@string/done"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="170dip"
+                android:layout_height="80dip"
+                android:layout_marginLeft="90dip"
+                android:background="@drawable/button_background"
+                android:onClick="onCancelClick"
+                android:text="@string/cancel"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/authLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@color/HomeBackroud"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/enterAuthKey"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:text="@string/enterAuthKey"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/authKey"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:hint="Authentication Key"
+        android:background="@color/white"
+        android:gravity="center_horizontal|center_vertical"
+        android:inputType="textCapCharacters"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:onClick="onSaveClick"
+        android:text="Authenticate"
+        android:textSize="30sp" />
+
+</LinearLayout>

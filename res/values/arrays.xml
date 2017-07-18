@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="genderArray">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+    <array name="diseaseArray">
+        <item>Select Disease</item>
+        <item>Pulmonary</item>
+        <item>Extra Pulmonary</item>
+    </array>
+    <array name="patientTypeArray">
+        <item>Select Patient Type</item>
+        <item>New</item>
+        <item>Relapse</item>
+        <item>Transfer in</item>
+        <item>Failure</item>
+        <item>Treatment after default</item>
+        <item>Other (Specify)</item>
+    </array>
+    <array name="patientSourceArray">
+        <item>Operation Asha</item>
+        <item>DMC</item>
+    </array>
+    <array name="labMonth">
+        <item>Select Lab Month</item>
+        <item>Pretreatment</item>
+        <item>End IP</item>
+        <item>Extended-IP</item>
+        <item>End treatment</item>
+    </array>
+    <array name="smokinghistoryArray">
+        <item>Unknown</item>
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+
+</resources>

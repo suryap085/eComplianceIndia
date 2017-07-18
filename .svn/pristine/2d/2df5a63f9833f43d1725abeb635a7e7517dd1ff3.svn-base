@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutHome"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnNewVisitor"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edit_box_animation"
+            android:drawableTop="@drawable/add"
+            android:onClick="btnNewVisitorClick"
+            android:text="@string/NewVisitor"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnEditVisitor"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edit_box_animation"
+            android:drawableTop="@drawable/edit"
+            android:onClick="btnEditVisitorClick"
+            android:text="@string/EditVisitor"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnViewVisitor"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edit_box_animation"
+            android:drawableTop="@drawable/view"
+            android:onClick="btnViewVisitorClick"
+            android:text="@string/Reports"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/syncbutton"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#00ABF1"
+            android:drawableTop="@drawable/sync"
+            android:onClick="onSyncClick"
+            android:textColor="@color/White"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_weight="17"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/pendingPatientcount"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/yellow"
+                android:onClick="pendingClick"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/visitedTodayCount"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/green"
+                android:onClick="visitClick"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/missedDoseCount"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/red"
+                android:onClick="missedClick"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="3"
+            android:background="@color/Wheat"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="50"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgIdentFpImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000FF"
+                android:contentDescription="@string/FingerPrint"
+                android:onClick="onScanClick"
+                android:padding="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scan_blank" />
+        </LinearLayout>
+        <!-- android:background="#AEB3D2" -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/btncameraOn_Off"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                android:textOff="Camera Off"
+                android:textOn="Camera On" />
+
+            <ImageButton
+                android:id="@+id/imgButtonHavingTrouble"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/helpicon"
+                android:contentDescription="@string/HavingTrouble"
+                android:onClick="onHavingTroubleClick" />
+
+            <ImageButton
+                android:id="@+id/imgAdminLoggedIn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/admin"
+                android:contentDescription="@string/SignOffAdmin"
+                android:onClick="onSignOffClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblIdentHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_weight="2"
+        android:textColor="@color/Black"
+        android:textIsSelectable="false"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/lblIdentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_weight="2"
+        android:textColor="@color/Blue"
+        android:textIsSelectable="false"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="4"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnUnsupervisedDose"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:onClick="btnUnsupervisedDoseClick"
+            android:text="@string/unsupervisedDose"
+            android:textIsSelectable="false"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnFBSResult"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:onClick="btnFBSClick"
+            android:text="@string/FBSResult"
+            android:textIsSelectable="false"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnHBA1cResult"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:onClick="btnHBA1cDoseClick"
+            android:text="@string/HBA1CResult"
+            android:textIsSelectable="false"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="5"
+        android:background="@drawable/green_button_home"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/machineType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/white"
+                android:textIsSelectable="true"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_margin="1dp"
+                android:background="@color/Silver" />
+
+            <TextView
+                android:id="@+id/centerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="@color/White"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/counselorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="@color/White"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

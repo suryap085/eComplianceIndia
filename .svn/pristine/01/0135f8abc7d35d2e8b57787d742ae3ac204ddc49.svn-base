@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editPatientLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/grey_to_red_transition"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:text="@string/treatmentId"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtViewTreatmentIdEdit"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- detailas and error layout -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:orientation="horizontal" >
+
+                <!-- Details layout -->
+
+                <LinearLayout
+                    android:layout_width="310dip"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginTop="20dip"
+                        android:text="@string/name"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edittxtPatientNameEdit"
+                        android:layout_width="240dip"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/edit_box_animation"
+                        android:hint="@string/hintName"
+                        android:maxLength="200"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginTop="20dip"
+                        android:text="@string/phoneNumber"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edittxtPatientPhoneEdit"
+                        android:layout_width="240dip"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/edit_box_animation"
+                        android:hint="@string/hintPhoneNumber"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginTop="20dip"
+                        android:text="@string/address"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/patientAddress"
+                        android:layout_width="240dip"
+                        android:layout_height="50dip"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/edit_box_animation"
+                        android:hint="@string/addressHint"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/lblLabResult"
+                        android:layout_width="300dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginTop="20dip"
+                        android:text="@string/labResult"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <!-- Error layout -->
+
+                <LinearLayout
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="30dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="140dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:text="@string/enterUserInformation"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txtviewPatientErrorEdit"
+                        android:layout_width="140dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:text=""
+                        android:textColor="@color/Green"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="@string/gender"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/selectGender"
+                        android:layout_width="fill_parent"
+                        android:layout_height="70dip"
+                        android:layout_marginLeft="20dip"
+                        android:entries="@array/genderArray"
+                        android:popupBackground="@color/ContactEditBackground"
+                        android:prompt="@string/genderPrompt"
+                        android:scrollbarStyle="insideOverlay"
+                        android:textColor="#372c24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="220dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="@string/age"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/age"
+                        android:layout_width="250dip"
+                        android:layout_height="50dip"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/edit_box_animation"
+                        android:hint="@string/hintAge"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/red"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/labmonth"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerPatientLabMonth"
+                            android:layout_width="fill_parent"
+                            android:layout_height="70dip"
+                            android:popupBackground="@color/ContactEditBackground"
+                            android:prompt="@string/labMonthPrompt"
+                            android:scrollbarStyle="insideOverlay"
+                            android:textColor="#372c24" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/labResultLayout"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/txtViewLabResult"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/labResult"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerPatientLabResult"
+                            android:layout_width="fill_parent"
+                            android:layout_height="70dip"
+                            android:popupBackground="@color/ContactEditBackground"
+                            android:prompt="@string/labResultPrompt"
+                            android:scrollbarStyle="insideOverlay"
+                            android:textColor="#372c24" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dip"
+                            android:text="@string/labDate"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/labDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dip"
+                            android:layout_marginLeft="20dip"
+                            android:background="@drawable/edit_box_animation"
+                            android:hint="@string/labDatehint"
+                            android:inputType="date"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/labDmc"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/labDmc"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dip"
+                            android:background="@drawable/edit_box_animation"
+                            android:hint="@string/labDmchint"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dip"
+                            android:text="@string/labNo"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/labno"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dip"
+                            android:layout_marginLeft="20dip"
+                            android:background="@drawable/edit_box_animation"
+                            android:hint="@string/labNohint"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/labWeight"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/labweight"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dip"
+                            android:background="@drawable/edit_box_animation"
+                            android:hint="@string/labWeighthint"
+                            android:inputType="numberDecimal"
+                            android:maxLength="3"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:background="@color/red"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dip"
+                            android:text="@string/diseaseClassification"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerPatientDiseaseAdd"
+                            android:layout_width="fill_parent"
+                            android:layout_height="70dip"
+                            android:layout_marginLeft="20dip"
+                            android:entries="@array/diseaseArray"
+                            android:popupBackground="@color/ContactEditBackground"
+                            android:prompt="@string/diseasePrompt"
+                            android:scrollbarStyle="insideOverlay"
+                            android:textColor="#372c24" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Typeofpatient"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerPatientType"
+                            android:layout_width="fill_parent"
+                            android:layout_height="70dip"
+                            android:entries="@array/patientTypeArray"
+                            android:gravity="left"
+                            android:popupBackground="@color/ContactEditBackground"
+                            android:prompt="@string/patinettypePrompt"
+                            android:scrollbarStyle="insideOverlay"
+                            android:textColor="#372c24" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/diseaseSite_layout"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dip"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="@string/diseaseSite"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/DiseaseSite"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/edit_box_animation"
+                        android:hint="@string/diseaseSiteHint"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/otherpatientlayout"
+                    android:layout_width="300dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dip"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="@string/otherpatient"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/otherpatientType"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/edit_box_animation"
+                        android:hint="@string/otherpatienthint"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dip"
+                            android:text="@string/nikshayId"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/nikashayId"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dip"
+                            android:layout_marginLeft="20dip"
+                            android:background="@drawable/edit_box_animation"
+                            android:hint="@string/nikshayidhint"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tbNumber"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/tbnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dip"
+                            android:background="@drawable/edit_box_animation"
+                            android:hint="@string/tbNumberHint"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dip"
+                            android:text="@string/adharno"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/adharno"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dip"
+                            android:layout_marginLeft="20dip"
+                            android:background="@drawable/edit_box_animation"
+                            android:hint="@string/adharnohint"
+                            android:inputType="number"
+                            android:maxLength="12"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/smokingHistory"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnersmokinghistory"
+                            android:layout_width="fill_parent"
+                            android:layout_height="70dip"
+                            android:entries="@array/smokinghistoryArray"
+                            android:popupBackground="@color/ContactEditBackground"
+                            android:scrollbarStyle="insideOverlay"
+                            android:textColor="#372c24" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/categoryLayoutEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/textview_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:text="@string/category"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtViewCurrentCategory"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="CAT-1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnChangeCategory"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="btnChangeCategory"
+                android:padding="2dip"
+                android:text="@string/changeCategory"
+                android:textColor="@color/Black"
+                android:textSize="18dip" />
+        </LinearLayout>
+        <!-- Stage layout -->
+
+        <LinearLayout
+            android:id="@+id/stageLayoutEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/textview_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:text="@string/stage"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtViewCurrentStage"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_horizontal|center_vertical"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnChangeStage"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="btnChangeStage"
+                android:padding="2dip"
+                android:text="@string/changeStage"
+                android:textColor="@color/Black"
+                android:textSize="18dip" />
+        </LinearLayout>
+        <!-- Schedule layout -->
+
+        <LinearLayout
+            android:id="@+id/scheduleLayoutEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/textview_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:text="@string/schedule"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtViewCurrentSchedule"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_horizontal|center_vertical"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnChangeSchedule"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="btnChangeSchedule"
+                android:padding="2dip"
+                android:text="@string/changeschedule"
+                android:textColor="@color/Black"
+                android:textSize="18dip" />
+        </LinearLayout>
+        <!-- Status layout -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/textview_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:text="@string/status"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtViewCurrentStatus"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Active"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnchangeStatus"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="btnChangeStatus"
+                android:padding="2dip"
+                android:text="@string/changeStatus"
+                android:textColor="@color/Black"
+                android:textSize="18dip" />
+        </LinearLayout>
+        <!-- Hiv Layout -->
+
+        <LinearLayout
+            android:id="@+id/hivLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/textview_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:text="@string/hivResult"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btnChangeHiv"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Demo1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="btnChangeHiv"
+                android:padding="2dip"
+                android:text="@string/changeResult"
+                android:textColor="@color/Black"
+                android:textSize="18dip" />
+        </LinearLayout>
+        <!-- Center layout -->
+
+        <LinearLayout
+            android:id="@+id/centerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/textview_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:text="@string/center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtViewCurrentCenter"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Demo1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnChangeCenter"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="btnChangeCenter"
+                android:padding="2dip"
+                android:text="@string/changeCenter"
+                android:textColor="@color/Black"
+                android:textSize="18dip" />
+        </LinearLayout>
+        <!-- Save and Cancel layout -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnPatientSaveEdit"
+                android:layout_width="150dip"
+                android:layout_height="60dip"
+                android:layout_marginLeft="40dip"
+                android:background="@drawable/button_background"
+                android:onClick="onSaveClick"
+                android:text="@string/save"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnPatientCancelEdit"
+                android:layout_width="150dip"
+                android:layout_height="60dip"
+                android:layout_marginLeft="90dip"
+                android:background="@drawable/button_background"
+                android:onClick="onCancelClick"
+                android:text="@string/cancel"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

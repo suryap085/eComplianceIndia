@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@color/HomeBackroud"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <Button
+        android:id="@+id/btnBackup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:onClick="onRestoreClick"
+        
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/Wheat"
+        android:textIsSelectable="true"
+        android:textSize="20sp" />
+
+</LinearLayout>

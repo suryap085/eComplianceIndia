@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:textColor="@color/Red" />
+
+    <TextView
+        android:id="@+id/diabetesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:text="@string/HBA1CResult"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edtTxthbc1aresult"
+            android:layout_width="200dip"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/edit_box_animation"
+            android:inputType="numberDecimal"
+            android:maxLength="6"
+            android:paddingLeft="5dip"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/txtViewpercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="%"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtViewfbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/edit_box_animation"
+        android:textColor="@color/Black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="130dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="70dip"
+            android:background="@drawable/button_background"
+            android:onClick="onSaveClick"
+            android:text="@string/save"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="130dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="100dip"
+            android:background="@drawable/button_background"
+            android:onClick="onCancelClick"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

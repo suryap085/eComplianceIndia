@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="top"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:layout_width="50dip"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:onClick="onBackClick"
+            android:src="@drawable/back_button_textfree" />
+
+        <ImageButton
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:onClick="onNextClick"
+            android:src="@drawable/next_text_free" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layouts"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/imgPatient"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:background="@drawable/edit_box_animation"
+            android:onClick="onPatientClick"
+            android:src="@drawable/patient_text_free" />
+
+        <ImageButton
+            android:id="@+id/imgPM"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:layout_marginTop="40dip"
+            android:background="@drawable/edit_box_animation"
+            android:onClick="onPMClick"
+            android:src="@drawable/pm" />
+
+        <ImageButton
+            android:id="@+id/imgProvider"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:layout_marginTop="40dip"
+            android:background="@drawable/edit_box_animation"
+            android:onClick="onProviderClick"
+            android:src="@drawable/provider" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selectCenterLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/grey_to_red_transition"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="100dip"
+                android:paddingRight="100dip"
+                android:paddingTop="80dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerCenterEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dip"
+                    android:popupBackground="@color/ContactEditBackground"
+                    android:prompt="@string/categoryPrompt"
+                    android:scrollbarStyle="insideOverlay"
+                    android:textColor="#372c24" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="150dip"
+                android:layout_height="70dip"
+                android:layout_marginLeft="50dip"
+                android:background="@drawable/button_background"
+                android:onClick="onDoneClick"
+                android:text="@string/done"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_width="150dip"
+                android:layout_height="70dip"
+                android:layout_marginLeft="100dip"
+                android:background="@drawable/button_background"
+                android:onClick="onCancelClick"
+                android:text="@string/cancel"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/centerError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="30dip"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>

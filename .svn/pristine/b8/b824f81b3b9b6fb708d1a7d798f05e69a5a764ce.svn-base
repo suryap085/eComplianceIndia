@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newVisitorLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TxtViewVisitorTypeAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Counselor"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:text="@string/txtId"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/TxtViewVisitorIdAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:text="A100"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:text="@string/CloseID"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/name"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/editTxtVisitorNameAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/edit_box_animation"
+                    android:gravity="center"
+                    android:hint="@string/hintName"
+                    android:inputType="textPersonName"
+                    android:maxLength="100"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="20dip"
+                    android:text="@string/phoneNumber"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/editTxtvisitorPhoneAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/edit_box_animation"
+                    android:gravity="center"
+                    android:hint="@string/hintPhoneNumber"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enterUserInformation"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtviewErrorAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text=""
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <Button
+                android:id="@+id/btnSaveAdd"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="40dip"
+                android:background="@drawable/button_background"
+                android:onClick="onSaveClick"
+                android:text="@string/save"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnCancelAdd"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="40dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/button_background"
+                android:onClick="onCancelClick"
+                android:text="@string/Cancel"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

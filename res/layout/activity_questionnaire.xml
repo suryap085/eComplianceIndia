@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/QuestionnaireLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <TextView
+        android:id="@+id/lblPreRegistrationQuestion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="10dip"
+        android:text="@string/isPatientNewForAshaProgram"
+        android:textIsSelectable="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblPreRegistrationQuestion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:textIsSelectable="true"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnYesAnswer"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dip"
+        android:onClick="onYesClick"
+        android:text="@string/yes"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnNoAnswer"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="20dip"
+        android:onClick="onNoClick"
+        android:text="@string/no"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/imageTreatmentID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="20dip" />
+
+</LinearLayout>

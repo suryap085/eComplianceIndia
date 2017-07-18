@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_enroll_fp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/showId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="3dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/imgStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/FingerPrint" />
+
+    <TextView
+        android:id="@+id/lblRegScanText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/Blue"
+        android:textIsSelectable="false"
+        android:textSize="21sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/missed"
+            android:onClick="onCancelClick" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="150dp"
+            android:background="@drawable/self_administered"
+            android:onClick="onSaveClick" />
+    </LinearLayout>
+
+</LinearLayout>

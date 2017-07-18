@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="isdatetimecorrect">Is Date and Time is Correct</string>
+    <string name="checksystemdatetime">Check System Date</string>
+    <string name="chooseautosync">Choose Auto Sync Frequency</string>
+    <string name="setfrequency">Set Auto Sync Frequency</string>
+    <string name="lastmonthnewreg">New Patients In Last Month</string>
+    <string name="app_name">eCompliance</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="currentmonthnewreg">New Patients In Current Month</string>
+    <string name="ip">IP</string>
+    <string name="synctxt">Last Sync:</string>
+    <string name="cp">CP</string>
+    <string name="cat2">Patients in CAT-2</string>
+    <string name="cat2ip">IP</string>
+    <string name="cat2exip">EX-IP</string>
+    <string name="cat2cp">CP</string>
+    <string name="exip">EX-IP</string>
+    <string name="na">N/A</string>
+    <string name="patientdetail">Patients Detail</string>
+    <string name="cat1">Patients in CAT-1</string>
+    <string name="otherdetail">Other Detail</string>
+    <string name="defaults"> Default Patients</string>
+    <string name="active">Total Active Patients</string>
+    <string name="sync1">Last Sync Time</string>
+    <string name="visitortime">Last Admin Login Time</string>
+    <string name="tentative">Tentative Default</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="FingerPrint">Finger Print</string>
+    <string name="ScanFinger">Scan Finger</string>
+    <string name="ClickScanFinger">Click to Scan Finger</string>
+    <string name="NewVisitor">New Visitor</string>
+    <string name="EditVisitor">Edit Visitor</string>
+    <string name="ViewVisitors">View Visitors</string>
+    <string name="Patient">Patient</string>
+    <string name="PM">Program Manager</string>
+    <string name="Counselor">Provider</string>
+    <string name="QA">Quality Auditor</string>
+    <string name="CDP">CDP</string>
+    <string name="Others">Others</string>
+    <string name="EnterId">Enter Id</string>
+    <string name="AshaId">Asha Id</string>
+    <string name="MarkVisit">Mark\nVisit</string>
+    <string name="Edit">Edit</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Backup">Backup</string>
+    <string name="Dashboard">Dashboard</string>
+    <string name="Diagnostics">Diagnostics</string>
+    <string name="HavingTrouble">Having Trouble</string>
+    <string name="SchedulePrompt">Choose Schedule:</string>
+    <string name="diseasePrompt">Choose Disease</string>
+    <string name="patinettypePrompt">Choose Type of patient</string>
+    <string name="otherpatient">Other Patient Type</string>
+    <string name="otherpatienthint">Enter Other Patient Type</string>
+    <string name="patinetsourcePrompt">Choose Patient Source</string>
+    <string name="StagePrompt">Choose Stage:</string>
+    <string name="StatusPrompt">Choose Status:</string>
+    <string name="categoryPrompt">Choose Category:</string>
+    <string name="centerPrompt">Choose Center:</string>
+    <string name="treatmentId">Treatment ID: </string>
+    <string name="enterUserInformation">Enter user Information and click on save button</string>
+    <string name="name">Name</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="stage">Stage</string>
+    <string name="schedule">Schedule</string>
+    <string name="diseaseClassification">Disease Classification</string>
+    <string name="Typeofpatient">Type of patient</string>
+    <string name="labDate">Lab Date</string>
+    <string name="labDmc">Lab DMC</string>
+    <string name="labNo">Lab No.</string>
+    <string name="diseaseSite">Disease Site</string>
+    <string name="diseaseSiteHint">Enter Disease Site</string>
+    <string name="labWeight">Patient Weight</string>
+    <string name="labDatehint">Enter Lab Date</string>
+    <string name="labDmchint">Enter Lab DMC</string>
+    <string name="labNohint">Enter Lab No.</string>
+    <string name="labWeighthint">Enter Patient Weight</string>
+    <string name="address">Address</string>
+    <string name="addressHint">Enter Address</string>
+    <string name="nikshayId">Nikshay Id</string>
+    <string name="nikshayidhint">Enter Nikshay Id</string>
+    <string name="adharno">Aadhaar Number</string>
+    <string name="adharnohint">Aadhaar Number</string>
+    <string name="tbNumber">TB Number</string>
+    <string name="tbNumberHint">Enter TB Number</string>
+    <string name="smokingHistory">History of Smoking</string>
+    <string name="patientsource">Patient Source</string>
+    <string name="IPdose">Dose Taken in IP</string>
+    <string name="priordosetaken">Patient Prior Dose Taken</string>
+    <string name="Ex_Ipdose">Dose Taken in Ex-IP</string>
+    <string name="CPdose">Dose Taken in CP</string>
+    <string name="category">Category</string>
+    <string name="center">Center</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="hintName">Enter name</string>
+    <string name="hintPhoneNumber">Enter No.</string>
+    <string name="EnterCenter">Enter Center:</string>
+    <string name="selectCategory">Select CAT</string>
+    <string name="txtId">(ID=</string>
+    <string name="CloseID">)</string>
+    <string name="selectCenter">Select Center</string>
+    <string name="notComplete">Treatment can not be Completed or Cured until Doses will Complete</string>
+    <string name="isPatientNewForAshaProgram">Is the patient new for asha program?</string>
+    <string name="DoesPatientHaveID">Does the patient have a Treatment Card? </string>
+    <string name="PatientTakenDoseForEightWeek">Has the patient taken dose in last 8 week?</string>
+    <string name="enterOldID">Enter old ID</string>
+    <string name="continu">Continue</string>
+    <string name="enterID">Enter Asha ID</string>
+    <string name="changeCategory">Change Category</string>
+    <string name="changeStage">Change Stage</string>
+    <string name="changeschedule">Change Schedule</string>
+    <string name="changeStatus">Change Status</string>
+    <string name="changeCenter">Change Center</string>
+    <string name="status">Status</string>
+    <string name="done">Done</string>
+    <string name="patientSaveDetail">Patient Detail has been changed</string>
+    <string name="ReportAllPatient">All Active Patients</string>
+    <string name="ReportAllVisitor">All Visitor</string>
+    <string name="ReportPendingToday">Pending Today</string>
+    <string name="ReportPatientVisitedToday">Patient Visited Today</string>
+    <string name="ReportVisitorLogged">Visitor Logged Today</string>
+    <string name="ReportMissedDose">Patient MIssed</string>
+    <string name="lastVisit">Last Scan</string>
+    <string name="Restore">Restore</string>
+    <string name="Diagnosis">Diagnose</string>
+    <string name="RestorePD">Restoration in Progress. Please wait.</string>
+    <string name="RestoreSuccessToast"> Restore done successfully!</string>
+    <string name="RestoreUnsuccessToast"> Restore unsuccessful!</string>
+    <string name="RestoreDirectryNotFound">Restore unsuccessful! File not found! Directory/file does not exist?</string>
+    
+    <string name="DownloadVideos">Download Videos</string>
+    <string name="DownloadVideosPD">Download in Progress. Please wait.</string>
+    <string name="DownloadVideosSuccessToast"> Download done successfully!</string>
+    <string name="DownloadVideosUnsuccessToast"> Download unsuccessful!</string>
+    <string name="DownlaodVideosDirectryNotFound">Download unsuccessful! File not found! Directory/file does not exist?</string>
+    
+    
+    <string name="savedFile">Saved File : </string>
+    <string name="missed">Missed</string>
+    <string name="pending">Pending</string>
+    <string name="visited">Visited</string>
+    <string name="menu_home_setting">Setting</string>
+    <string name="emptyID">Treatment Id can not be empty!</string>
+    <string name="enterCorrectId">Enter Correct Id</string>
+    <string name="defaultCanNotEdit">Defaulted Patient can not be edit!</string>
+    <string name="SignOffAdmin">Sign Off Admin</string>
+    <string name="Reports">Reports</string>
+    <string name="doYouWantToLogin">Do you want to Login ? </string>
+    <string name="adminLoginRequired">Admin Login Required!</string>
+    <string name="restartapp">Restart App</string>
+    <string name="restsrtmsg">Change will applied when you restart the application</string>
+    <string name="unsupervisedDose">Unsupervised Dose</string>
+    <string name="unsupervised_Dose">Unsupervised Dose for </string>
+    <string name="NumofDoses">No. Of Doses</string>
+    <string name="Reason">Reason</string>
+    <string name="unsupervisedDosePrompt">Choose No.of Unsupervised Dose:</string>
+    <string name="unsupervisedDoseReasonPrompt">Choose reason of Unsupervised Dose</string>
+    <string name="unsupervisedDosesave">Unsupervised Dose Successfully Given.</string>
+    <string name="title_activity_unsupervised_Dose">Unsupervised Dose</string>
+    <string name="patientCannotBeGivenUnsupervisedDose">Patient cannot be given Unsupervised Dose!</string>
+    <string name="counselorLoginRequired">Admin login required!</string>
+    <string name="pmLoginRequired">PM login required!</string>
+    <string name="sync">Sync</string>
+    <string name="PdSyncData">Synchronization in Progress. Please wait..</string>
+    <string name="enterAuthKey">Authentication</string>
+    <string name="AuthError">Authentication Error!</string>
+    <string name="AuthErrorDesc">Incorrect key! Enter Correct Key And Try Again!</string>
+    <string name="Retry">Retry</string>
+    <string name="pdAuthData">Authentication in Progress. Please wait.</string>
+    <string name="syncComplete">Synchronization Complete.</string>
+    <string name="adminNotAuth">not authenticated</string>
+    <string name="machineLocked">Machine Locked!</string>
+    <string name="closebutton">Close [x]</string>
+    <string name="sundayBlockMessage">This functionality will not work on Sunday</string>
+    <string name="patientsfromLegacy">Patients Re-registration</string>
+    <string name="visitorsfromLegacy">Visitors Re-registration</string>
+    <string name="verifyId">Verify Patient Details!</string>
+    <string name="doYouWantToContinue">Do You want to Continue?</string>
+    <string name="id">ID = </string>
+    <string name="cancellation">Cancellation</string>
+    <string name="labResult">Lab Result</string>
+    <string name="labmonth">Lab Month</string>
+    <string name="labResultPrompt">Choose Lab Result</string>
+    <string name="labMonthPrompt">Choose Lab Month</string>
+    <string name="selectLabResult">Select Result</string>
+    <string name="selectNewCenter">Select New Center</string>
+    <string name="clusterLockMessage">Another Machine is Syncing.Try later! </string>
+    <string name="transferInternallyCanNotEdit">Transferred Internally Patient can not be edit!</string>
+    <string name="notificationMachineInactive">Machine is not Active </string>
+    <string name="notificationMachineIdNotExist">Machine Id does not exist</string>
+    <string name="enterCorrectName">Enter correct name</string>
+    <string name="enterCorrectPhone">Enter correct Phone No.</string>
+    <string name="enterName">Enter Name</string>
+    <string name="enterPhoneNo">Enter Phone No.</string>
+    <string name="updated">updated</string>
+    <string name="primaryFinger">Primary Finger</string>
+    <string name="secondaryFinger">Secondary Finger</string>
+    <string name="rightThumb">Right Thumb</string>
+    <string name="rightIndexFinger">Right Index Finger</string>
+    <string name="rightMiddleFinger">Right Middle Finger</string>
+    <string name="rightRingFinger">Right Ring Finger</string>
+    <string name="rightPinky">Right Pinky</string>
+    <string name="leftThumb">Left Thumb</string>
+    <string name="leftIndexFinger">Left Index Finger</string>
+    <string name="leftMiddleFinger">Left Middle Finger</string>
+    <string name="leftRingFinger">Left Ring Finger</string>
+    <string name="leftPinky">Left Pinky</string>
+    <string name="canntOpenUSBDevice">Can not open USB device</string>
+    <string name="cannotStartEnrollmentErrorDescription">Can not start enrollment operation.</string>
+    <string name="registrationCanceled">Registration Canceled by User.</string>
+    <string name="registered">registered!</string>
+    <string name="userDenyScannerDevice">User deny scanner device</string>
+    <string name="scanYourFinger">Scan your finger.</string>
+    <string name="moreTime">more time(s).</string>
+    <string name="takeFingerOff">Take finger off from device</string>
+    <string name="enrollmentFinishedSuccessfully">Enrollment finished successfully. Quality: </string>
+    <string name="scanAlreadyExists">Enrollment failed. Scan already exists!</string>
+    <string name="putFingeronDevice">Put finger on device</string>
+    <string name="fingerprintReaderError">Fingerprint Reader Error</string>
+    <string name="identificationErrorDatabaseIsEmpty">Identification Error. Error description: Database is Empty</string>
+    <string name="alreadyVisitedToday">already visited today.</string>
+    <string name="loggedIn">logged in.</string>
+    <string name="hasAlreadyTakenDose">has already taken dose.</string>
+    <string name="isInactiveCurrentStatus">is Inactive. Current Status: </string>
+    <string name="noDataHere">No Data Here</string>
+    <string name="visitorInactive">Scan Found but Visitor is Inactive.</string>
+    <string name="errorIdEmpty">Error! Treatment Id is empty!</string>
+    <string name="errorIdNotFound">Error! Treatment Id not found!</string>
+    <string name="verificationCanceledByUser">Verification Canceled by User</string>
+    <string name="scanMismatchError">Scan Mismatch Error!</string>
+    <string name="identificationCompleteNotFound">Identification Complete: Not Found!</string>
+    <string name="visitorOrPatientNotExist">Visitor/Patient does not exist!</string>
+    <string name="scanmismatch">Scan Mismatch Error</string>
+    <string name="canNotStartEnrollmentOperation">Can not start enrollment operation</string>
+    <string name="errorDescription">Error description:</string>
+    <string name="canNotOpenScannerDevice">Can not open scanner device.</string>
+    <string name="canNotStartVerificationOperation">Can not start Verification Operation.</string>
+    <string name="canNotStartIdentificationOperation">Can not start Identification Operation.</string>
+    <string name="initialCounsellingTimedOut">%1$s\'s Initial Counselling Timed Out. Re-scan patient\'s finger to start initial counselling again!</string>
+    <string name="initialCounsellingStarted">%1$s\'s Initial Counselling started.</string>
+    <string name="repeatCounsellingStarted">%1$s\'s Repeat Counselling started.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="provider">Provider Machine</string>
+    <string name="centerMachine">Center Machine</string>
+    <string name="internetConnectionUnavailable">Sync Failure. No Internet Connection.</string>
+    <string name="ok">OK</string>
+    <string name="incorrectTreatmentId">Incorrect Treatment Id. Select Again!</string>
+    <string name="error">Error!</string>
+    <string name="demo">Demo</string>
+    <string name="menu_resource">Download Resources</string>
+    <string name="menu_Balance">Check Balance</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="genderPrompt">Select Gender</string>
+    <string name="hintAge">Age</string>
+    <string name="enterCorrectAge">Enter Correct Age</string>
+    <string name="selectGender">Select Gender</string>
+    <string name="enterAge">Enter Age</string>
+    <string name="enterIP">Enter IP Doses</string>
+    <string name="enterExtIP">Enter Ext-IP Doses</string>
+    <string name="enterCP">Enter CP Doses</string>
+    <string name="enterdiseaseSite">Enter disease site</string>
+    <string name="selectpatienttype">Select Patient Type</string>
+    <string name="enteradharnumber">Enter 12 digit Aadhaar Number</string>
+    <string name="selectmonth">Select Lab Month</string>
+    <string name="selectdisease">Select Disease Classification</string>
+    <string name="enterlabdate">Enter Lab Date</string>
+    <string name="enterlabdmc">Enter Lab DMC</string>
+    <string name="enterlabno">Enter Lab No.</string>
+    <string name="enterpatientweight">Enter Patient Weight</string>
+    <string name="networkError">Network Error</string>
+    <string name="netwrokErrorDes">Network is not available.Check Your Network!</string>
+    <string name="keyManagementError">Key Management Error.Contact Technical Team</string>
+    <string name="menu_pos_contacts">Positive Contacts</string>
+    <string name="setsyncfrequency">Set Auto Sync Frequency</string>
+    <string name="sendDatatoServer">Send Data</string>
+    <string name="refPhone">Reference Phone</string>
+    <string name="refName">Reference Name</string>
+    <string name="inactivePatient">Inactive Patient</string>
+    <string name="hosPatient">Hopitalised Patients</string>
+    <string name="questionsfinal">Final</string>
+    <string name="Back">Back</string>
+    <string name="Comments">Comments</string>
+    <string name="howmanydonglewere">How many Dongles were present at the center with provider ?(At least 2 Dongles  should be present with the Providerat the Center)</string>
+    <string name="ChildrenOldAges">Children and Old Aged</string>
+    <string name="maxIPDoseCAT2">CAT-II IP Dose can not be greater than 36</string>
+    <string name="maxExtIPDoseCAT2">CAT-II Ext-IP Dose can not be greater than 12</string>
+    <string name="maxCPDoseCAT2">CAT-II CP Dose can not be greater than 22</string>
+    <string name="maxIPDoseCAT1">CAT-I IP Dose can not be greater than 24</string>
+    <string name="lessIPDoseCAT1">CAT-I IP Dose can not be less than 24</string>
+    <string name="lessIPDoseCAT2">CAT-II IP Dose can not be less than 36</string>
+    <string name="maxExtIPDoseCAT1">CAT-I Ext-IP Dose can not be greater than 12</string>
+    <string name="lessExtIPDoseCAT1">CAT-I Ext-IP enter correct dose</string>
+    <string name="lessExtIPDoseCAT2">CAT-II Ext-IP enter correct dose</string>
+    <string name="maxCPDoseCAT1">CAT-I CP Dose can not be greater than 18</string>
+    <string name="canttakemoredoses">Can not take more doses in current stage</string>
+    <string name="PdSendData">Sending data in Progress. Please wait..</string>
+    <string name="sendComplete">Send data Complete.</string>
+    
+    
+    <string name="maxIPDoseCAT1daily">CAT-I IP Dose can not be greater than 56</string>
+     <string name="maxIPDoseCAT2daily">CAT-II IP Dose can not be greater than 84</string>
+     <string name="lessIPDoseCAT1daily">CAT-I IP Dose should be 24 or 56</string>
+     <string name="lessIPDoseCAT2daily">CAT-II IP Dose should be 36 or 84</string>
+     <string name="maxCPDoseCAT1daily">CAT-I CP Dose can not be greater than 112</string>
+     <string name="maxCPDoseCAT2daily">CAT-II CP Dose can not be greater than 140</string>
+    
+    
+    <string name="IrisError">"Error",
+					"The program cannot run properly due to connection problem."
+							+ "We suggest to do the following actions:\n\t1. Unplug and plugin the device.\n\t2. Restart the application"</string>
+
+    <string-array name="languagesArray">
+        <item>English</item>
+        <item>हिंदी</item>
+    </string-array>
+    <string-array name="QualityQuestionArray">
+        <item>Select Options</item>
+        <item>Average</item>
+        <item>Good</item>
+        <item>Excellent</item>
+    </string-array>
+    <string-array name="secondSpin">
+        <item>Select Options</item>
+        <item>Admin Account</item>
+        <item>User Account</item>
+    </string-array>
+    <string-array name="thirdspin">
+        <item>Select Options</item>
+        <item>Idea Net Setter</item>
+        <item>Any Other Dongle or Data Cards</item>
+    </string-array>
+    <string-array name="fourspin">
+        <item>Select Options</item>
+        <item>Good</item>
+        <item>Poor</item>
+    </string-array>
+    <string-array name="fivespin">
+        <item>Select Options</item>
+        <item>Center Machine</item>
+        <item>Provider Machine</item>
+    </string-array>
+    <string-array name="sixspin">
+        <item>Select Options</item>
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+    </string-array>
+    <string-array name="applicationTypeArray">
+        <item>Application With Text</item>
+        <item>Application without Text</item>
+    </string-array>
+    <string-array name="farn_array">
+        <item>95</item>
+        <item>166</item>
+        <item>245</item>
+        <item>345</item>
+        <item>405</item>
+    </string-array>
+    <string-array name="maxframes_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="sdkversion_array">
+        <item>SDK 3.0</item>
+        <item>SDK 3.5</item>
+        <item>Both</item>
+    </string-array>
+
+    <string name="dash">DashBoard</string>
+    <string name="Ip1">IP</string>
+    <string name="Cp1">CP</string>
+    <string name="Exip1">EX-IP</string>
+    <string name="allTotal">Total</string>
+    <string name="Ip2">IP</string>
+    <string name="Cp2">CP</string>
+    <string name="ExIp2">EX-IP</string>
+    <string name="tantative">Tantative Patients</string>
+    <string name="lastmonthdefault">Total Default Patients</string>
+    <string name="lastMonth">Last New Patients</string>
+    <string name="currentMonth">Current Month New Patients</string>
+    <string name="adminlogin">Last Admin Login Time</string>
+    <string name="lastSync">Last Sync Time</string>
+    <string name="Cat1">Cat-I</string>
+    <string name="Cat2">Cat-II</string>
+    <string name="hivResult">HIV Final Result</string>
+    <string name="screeningResult">HIV Screening Result</string>
+    <string name="changeResult">Change Result</string>
+    <string name="hivResultType">HIV Result Type</string>
+    <string name="selectScreenResult">Select Screening Result</string>
+    <string name="selectFinal">Select Final Result</string>
+    <string name="FBSResult">Fasting Blood Sugar Test Result</string>
+    <string name="HBA1CResult">HbA1C Result</string>
+    <string name="HBA1CResultCancelled">HbA1C Result Cancelled!</string>
+    <string name="FBSResultCancelled">Fasting Blood Sugar Test Result Cancelled!</string>
+    <string name="enterFBSResult">Enter Fasting Blood Sugar Test</string>
+    <string name="enterCorrectFBSResult">Enter Correct Fasting Blood Sugar Test</string>
+    <string name="fbsResultComplete">Fasting Blood Sugar Test Completed!</string>
+    <string name="enterHBaicResult">Enter HbA1C Result</string>
+    <string name="enterCorrectHBaicResult">Enter Correct HbA1C Result</string>
+    <string name="HBA1CResultComplete">HbA1C Result Completed</string>
+    <string name="next">Next</string>
+    <string name="header">Quality Audit Questions</string>
+    <string name="doYouWantToFinalTheAudit">Do you want finalize the audit?</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="finalize">Yes</string>
+    <string name="qauaityAuditComplete">Quality audit completed!</string>
+    <string name="saving">Saving...</string>
+    <string name="loding">Loding...</string>
+    <string name="qauaityAuditCompleteFirstStage">Login to finalize the audit...</string>
+    <string name="verifying">Verifying...</string>
+    <string name="select">Select</string>
+    <string name="qualityAuditCanceled">Quality audit cancelled!</string>
+    <string name="errorTabId">Error with Tab Id. Please contact support team.</string>
+    <string name="errorCenterId">Error with Center Id. Please contact support team.</string>
+    <string name="iagree">I Agree</string>
+    <string name="patientRegistraton">Patient Registration</string>
+    <string name="pmRegistration">PM Registration</string>
+    <string name="pmLoginRequiredFull">Program Manager login required!</string>
+    <string name="updateScan">Update Scan/Old Patient</string>
+	<string name="Iris">Iris</string>
+	<string name="scanLeftEye">Scan Left Eye</string>
+	<string name="scanRightEye">Scan Right Eye</string>
+	<string name="isInternet">Internet Connectivity:</string>
+	<string name="isServer">Server Connectivity:</string>
+	<string name="isLocation">Location Accuracy:</string>
+	<string name="isSim">Sim Availability:</string>
+	<string name="menu_home_download_videos">Download Videos</string>
+	<string name="menu_home_display_videos">Display Videos</string>
+
+    <string-array name="hivResult_array">
+        <item>Select Result</item>
+        <item>+ve</item>
+        <item>-ve</item>
+        <item>NA</item>
+    </string-array>
+    <string-array name="hivResult_array_edit">
+        <item>Select Result</item>
+        <item>+ve</item>
+        <item>-ve</item>
+    </string-array>
+    <string-array name="SelfAdmin">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+</resources>

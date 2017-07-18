@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/unsupervisedDoseLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/NumofDoses"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinUnsupervisedDose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:prompt="@string/unsupervisedDosePrompt"
+            android:textColor="#372c24"
+            android:textSize="300sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Reason"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinUnsupervisedDoseReason"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:prompt="@string/unsupervisedDoseReasonPrompt"
+            android:textColor="#372c24"
+            android:textSize="300sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnSave"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:onClick="onSaveClick"
+            android:text="@string/save"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:onClick="onCancelClick"
+            android:text="@string/Cancel"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutHome"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnNewVisitor"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/add_text_free"
+            android:onClick="btnNewVisitorClick" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/edit_text_free"
+            android:onClick="btnEditVisitorClick" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/visited_patients_text_less"
+            android:onClick="visitClick" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/pending_patients_text_less"
+            android:onClick="pendingClick" />
+
+        <ImageButton
+            android:id="@+id/imgButtonHavingTrouble"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/helpicon"
+            android:contentDescription="@string/HavingTrouble"
+            android:onClick="onHavingTroubleClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="310dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="20dip"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imgAdminLoggedIn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:background="@drawable/admin"
+                android:contentDescription="@string/SignOffAdmin"
+                android:onClick="onSignOffClick"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@color/Wheat"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgIdentFpImg"
+                android:layout_width="160dp"
+                android:layout_height="220dp"
+                android:layout_margin="3dp"
+                android:background="@color/White"
+                android:contentDescription="@string/FingerPrint"
+                android:onClick="onScanClick" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblfingerPrintConnection"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/futronic_disabled"
+            android:onClick="onPatientIconClick" />
+
+        <TextView
+            android:id="@+id/lblPatientStatus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_margin="2dip"
+        android:background="@color/Azure"
+        android:padding="5dip" >
+
+        <TableLayout
+            android:id="@+id/videoview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:background="@color/Azure" />
+    </ScrollView>
+
+</LinearLayout>

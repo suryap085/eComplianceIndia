@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Grey"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnNewPatient"
+        style="?android:attr/buttonStyleToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_background_grey"
+        android:onClick="onPatientClick"
+        android:padding="10dp"
+        android:text="@string/Patient"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnNewCounselor"
+        style="?android:attr/buttonStyleToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="@drawable/button_background_grey"
+        android:onClick="onCounselorClick"
+        android:text="@string/Counselor"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnNewPm"
+        style="?android:attr/buttonStyleToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="@drawable/button_background_grey"
+        android:onClick="onPMClick"
+        android:text="@string/PM"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnNewCdp"
+        style="?android:attr/buttonStyleToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="@drawable/button_background_grey"
+        android:onClick="onCDPClick"
+        android:text="@string/CDP"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnNewQa"
+        style="?android:attr/buttonStyleToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="@drawable/button_background_grey"
+        android:onClick="onQAClick"
+        android:text="@string/QA"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnNewOthers"
+        style="?android:attr/buttonStyleToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="@drawable/button_background_grey"
+        android:onClick="onOthersClick"
+        android:text="@string/Others"
+        android:textSize="18sp" />
+
+</LinearLayout>

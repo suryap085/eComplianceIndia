@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/HomeBackroud" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/btn_all_patients"
+                style="@style/ReportsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/all_patient"
+                android:text="@string/ReportAllPatient"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_all_visitors"
+                style="@style/ReportsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/all_visitors"
+                android:text="@string/ReportAllVisitor"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/btn_pending_today"
+                style="@style/ReportsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/pending_patients"
+                android:text="@string/ReportPendingToday"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_patient_visited_today"
+                style="@style/ReportsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/visited_patients"
+                android:text="@string/ReportPatientVisitedToday"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/btn_visitors_logged_today"
+                style="@style/ReportsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/visitors_visited_today"
+                android:text="@string/ReportVisitorLogged"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_missed_dose"
+                style="@style/ReportsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/missed_patients"
+                android:text="@string/ReportMissedDose"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/btn_inactive_patient"
+                style="@style/ReportsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/inactive_patients"
+                android:text="@string/inactivePatient"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_hospitalised_patient"
+                style="@style/ReportsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/hospitalised"
+                android:text="@string/hosPatient"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

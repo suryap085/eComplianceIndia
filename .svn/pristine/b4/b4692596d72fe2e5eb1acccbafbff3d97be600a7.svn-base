@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.opasha.eCompliance.ecompliance"
+    android:versionCode="94"
+    android:versionName="2.88" >
+
+    <uses-sdk android:minSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="eComplianceApp"
+        android:allowBackup="true"
+        android:icon="@drawable/application_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="AuditQuestionsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="PatientDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="QualityAuditSummaryReport"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="EnrollActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name="EnrollIrisActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name="DashBoardActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="DiabetesActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="PositiveContactsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="HomeActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.StartActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>  
+        </activity>
+         <activity
+            android:name="org.opasha.eCompliance.ecompliance.DownloadVideosActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+         <activity
+            android:name="DisplayStaticVideosListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >          
+        </activity>
+        
+         <activity
+            android:name="DisplayStaticVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" > 
+        </activity>
+             
+        <activity
+            android:name="ConfigurationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="DisplayVideosActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.AuthKeyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.SyncActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.DoseReportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="PatientReportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="VisitorReportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="RestoreActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+         
+        <activity
+            android:name="Reports"
+            android:configChanges="locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="SelectStatusActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTabTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="SelectCenterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTabTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="SelectRegimenActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:screenOrientation="portrait" android:theme="@style/CustomTabTheme" android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="EditPatientActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTabTheme" >
+        </activity>
+        <activity
+            android:name="EditVisitorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="NewVisitorSelectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTabTheme" >
+        </activity>
+        <activity
+            android:name="NewPatientActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTabTheme" >
+        </activity>
+        <activity
+            android:name="EnterIdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="VerifyActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name="NewVisitorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTabTheme" >
+        </activity>
+        <activity
+            android:name="BackupActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="QuestionnaireOneActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="QuestionTwoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="QuestionnaireThreeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="EnterOldIdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="ReportsViews"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="IdentifyActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name="UnsupervisedDoseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTabTheme" >
+        </activity>
+        <activity
+            android:name="RecheckIdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver
+            android:name="AutoSyncReceiver"
+            android:permission="android.permission.WAKE_LOCK" >
+            <intent-filter>
+                <action android:name="org.opasha.eCompliance.ecompliance.AUTO_SYNC_TIMER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="LocationReceiver"
+            android:permission="android.permission.WAKE_LOCK" >
+            <intent-filter>
+                <action android:name="org.opasha.eCompliance.ecompliance.AUTO_LOCATION" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="UsbReceiver"
+            android:permission="android.permission.WAKE_LOCK" >
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </receiver>
+
+        <activity
+            android:name="UsbEventReceiverActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:label="eCompliance"
+            android:noHistory="true"
+            android:process=":UsbEventReceiverActivityProcess"
+            android:taskAffinity="com.example.taskAffinityUsbEventReceiver"
+            android:theme="@style/Theme.Transparent" >
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <!-- Text Free System Activity -->
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.TextFree.EnrollActivityTextFree"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.TextFree.HomeActivityTextFree"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.TextFree.ShowFinalRegistration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.TextFree.SelectImageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.TextFree.DownloadResourcesTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.TextFree.ResourceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.TextFree.SelectScheduleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.TextFree.SelectCategoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.TextFree.SelectStageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.TextFree.ReportListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.TextFree.IdentifyActivityTextFree"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.TextFree.SelectStatusActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.TextFree.SelectVisitorTextFree"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.TextFree.SelectCenterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.TextFree.UnsupervisedDoseTextFree"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="org.opasha.eCompliance.ecompliance.TextFree.VerifyActivityTextFree"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name="SelectHivResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTabTheme" >
+        </activity>
+        <activity
+            android:name="SelfAdminActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTabTheme" >
+        </activity>
+        <activity
+            android:name="Dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTabTheme" >
+        </activity>
+         <activity
+            android:name="org.opasha.eCompliance.ecompliance.DiagnosisActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

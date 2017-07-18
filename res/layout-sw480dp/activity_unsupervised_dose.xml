@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/unsupervisedDoseLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textColor="@color/Black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/NumofDoses"
+            android:textColor="@color/Black"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinUnsupervisedDose"
+            android:layout_width="200dp"
+            android:layout_height="40dip"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="70dip"
+            android:clickable="true"
+            android:prompt="@string/unsupervisedDosePrompt"
+            android:textColor="#372c24"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/Reason"
+            android:textColor="@color/Black"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinUnsupervisedDoseReason"
+            android:layout_width="200dip"
+            android:layout_height="40dip"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="110dip"
+            android:prompt="@string/unsupervisedDoseReasonPrompt"
+            android:textColor="#372c24"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="130dip"
+            android:layout_height="60dip"
+            android:onClick="onSaveClick"
+            android:text="@string/save"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="130dip"
+            android:layout_height="60dip"
+            android:layout_marginLeft="50dp"
+            android:onClick="onCancelClick"
+            android:text="@string/Cancel"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

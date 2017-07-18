@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@color/qaListOne"
+                    android:orientation="horizontal"
+                    android:padding="5dip" >
+
+                    <TextView
+                        android:id="@+id/sum_id_closingOf"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="closing Of July"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/sum_edit_closingof"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_box_animation"
+                        android:gravity="left|center_vertical"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@color/qaListTwo"
+                    android:orientation="horizontal"
+                    android:padding="5dip" >
+
+                    <TextView
+                        android:id="@+id/sum_id_newPatientin"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="New Patients in August"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/sum_new_patientIn"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_box_animation"
+                        android:gravity="left|center_vertical"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@color/qaListOne"
+                    android:orientation="vertical"
+                    android:padding="5dip" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/qaListOne"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/sum_outcomeIn"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="left"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:text="Outcomes in August"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/sum_outcomeInTxtView"
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|center"
+                            android:text="0"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dip"
+                        android:background="@color/qaListOne"
+                        android:orientation="horizontal"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="left"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:text="Died"
+                            android:textSize="17sp" />
+
+                        <LinearLayout
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/sum_died_editTxt"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_box_animation"
+                            android:gravity="left|center_vertical"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dip"
+                        android:background="@color/qaListOne"
+                        android:orientation="horizontal"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="left"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:text="Cured"
+                            android:textSize="17sp" />
+
+                        <LinearLayout
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/sum_cured_editTxt"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_box_animation"
+                            android:gravity="left|center_vertical"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dip"
+                        android:background="@color/qaListOne"
+                        android:orientation="horizontal"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="left"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:text="Treatment Complete"
+                            android:textSize="17sp" />
+
+                        <LinearLayout
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/sum_trecom_editTxt"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_box_animation"
+                            android:gravity="left|center_vertical"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dip"
+                        android:background="@color/qaListOne"
+                        android:orientation="horizontal"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="left"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:text="Default"
+                            android:textSize="17sp" />
+
+                        <LinearLayout
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/sum_default_editTxt"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_box_animation"
+                            android:gravity="left|center_vertical"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dip"
+                        android:background="@color/qaListOne"
+                        android:orientation="horizontal"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="left"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:text="Transfer Out"
+                            android:textSize="17sp" />
+
+                        <LinearLayout
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/sum_tran_editTxt"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_box_animation"
+                            android:gravity="left|center_vertical"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dip"
+                        android:background="@color/qaListOne"
+                        android:orientation="horizontal"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="left"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:text="Failure"
+                            android:textSize="17sp" />
+
+                        <LinearLayout
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/sum_failure_editTxt"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_box_animation"
+                            android:gravity="left|center_vertical"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dip"
+                        android:background="@color/qaListOne"
+                        android:orientation="horizontal"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="left"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:text="Switched to MDR"
+                            android:textSize="17sp" />
+
+                        <LinearLayout
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/sum_switchtoMdr_editTxt"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_box_animation"
+                            android:gravity="left|center_vertical"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@color/qaListTwo"
+                    android:orientation="horizontal"
+                    android:padding="5dip" >
+
+                    <TextView
+                        android:id="@+id/sum_closing_balaneOf"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="Closing Balance"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="5dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/sum_closingBananceOf_textView"
+                        android:layout_width="5dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center"
+                        android:text="0"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/edit_box_animation"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:background="@color/qaListOne"
+                        android:orientation="horizontal"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:id="@+id/sum_card_label"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="left"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:text="Card"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/sum_card_editTxt"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_box_animation"
+                            android:gravity="left|center_vertical"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:background="@color/qaListTwo"
+                        android:orientation="horizontal"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:id="@+id/sum_boxes_label"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="left"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:text="Boxes"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/sum_boxes_editTxt"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_box_animation"
+                            android:gravity="left|center_vertical"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:background="@color/qaListOne"
+                        android:orientation="horizontal"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:id="@+id/sum_tbNo_label"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="left"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:text="TB No."
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/sum_tbNo_editTxt"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_box_animation"
+                            android:gravity="left|center_vertical"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/edit_box_animation"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:background="@color/qaListOne"
+                        android:orientation="horizontal"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:id="@+id/sum_comments_label"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="left"
+                            android:layout_weight="1.7"
+                            android:gravity="center_vertical"
+                            android:text="Comments:"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="5dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight=".20"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/sum_comments_editTxt"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="4"
+                            android:background="@drawable/edit_box_animation"
+                            android:gravity="left|center_vertical"                            
+                            android:inputType="text"                            
+                            android:textSize="17sp" />
+                    </LinearLayout>>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.05"
+        android:max="1"
+        android:progress="1"
+        android:progressDrawable="@drawable/progressbarstyle" />
+
+    <LinearLayout
+        style="@android:style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0.4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_two"
+            android:onClick="OnClickCancel"
+            android:text="@string/Cancel"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_two"
+            android:onClick="onClickNext"
+            android:text="@string/next"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</LinearLayout>

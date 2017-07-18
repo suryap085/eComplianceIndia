@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:drawableLeft="@drawable/syncingdata"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:text="Sync"
+        android:textColor="@color/White" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Black" />
+
+    <TextView
+        android:id="@+id/senddata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:drawableLeft="@drawable/sendata"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:text="Send Data"
+        android:textColor="@color/White" />
+
+</LinearLayout>

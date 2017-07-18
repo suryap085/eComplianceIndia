@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPopUp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPopUpMarcoWindow"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorPopUpMarcoWindow"
+            android:text="@string/closebutton" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/childlinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="430dp"
+                    android:layout_height="430dp"
+                    android:src="@drawable/sputum_container"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="430dp"
+                    android:layout_height="430dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/bloodtest"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="430dp"
+                    android:layout_height="430dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/xray_test"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
